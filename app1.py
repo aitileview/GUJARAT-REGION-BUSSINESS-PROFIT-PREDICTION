@@ -5,7 +5,7 @@ import ml
 
 
 #Create app object
-app = Flask(__name__, static_folder='static')
+app1 = Flask(__name__, static_folder='static')
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
@@ -32,4 +32,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app1.run(debug=True, host="0.0.0.0", port=5000)
